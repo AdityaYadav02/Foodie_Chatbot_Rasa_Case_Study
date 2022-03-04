@@ -4,8 +4,8 @@ Submit the entire folder of your chatbot code as a zip file: It should have all 
 
 Note: Your chatbot will be evaluated through Command Prompt Line, not through Slack or any other channel. Also, ensure that you are mentioning all the updated versions used for your Chatbot project in a Read Me Text File as part of the Final Submission Folder.nt Search
 
-Library Installation :
-Create New Environment Variable :
+# Library Installation :
+## Create New Environment Variable :
 check no of env : conda env list or conda info --envs
 
 create : conda create -n RasaEnv python=3.7 anaconda
@@ -16,7 +16,7 @@ conda deactivate
 
 conda env remove --name ENVIRONMENT
 
-Required Libraries :
+## Required Libraries :
 pip install rasa
 
 pip install rasa[spacy]
@@ -26,7 +26,7 @@ python -m spacy download en_core_web_md
 OR
 python -m spacy link en_core_web_md en
 
-NLU :
+## NLU :
 Rasa NLU Run :
 rasa train nlu # train nlu model
 
@@ -49,14 +49,14 @@ rasa shell # test core model
 rasa test core # Evaluate core model
 
 Note : actions server run in terminal 1 and test model in terminal 2
-Run Chatbot :
-Terminal 1 :
+# Run Chatbot :
+## Terminal 1 :
 rasa init --no-prompt #note : do not run this command
 
 Start directly from here :
 rasa run -m models --enable-api --cors "*" --debug
 
-Terminal 2 :
+## Terminal 2 :
 ./ngrok http 5005 #linux
 
 ngrok http 5005 #windows
