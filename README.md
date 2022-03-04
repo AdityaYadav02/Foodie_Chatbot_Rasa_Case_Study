@@ -1,23 +1,3 @@
-# Assignment : Foodie Restaurant You’ll be evaluated on the following submission:
-
-Submit the entire folder of your chatbot code as a zip file: It should have all the data files, python files with codes, your saved models etc. The model should run on our CLI without any modifications. Your model will be evaluated on some test cases, similar to the ones shared with you.
-
-Note:  Your chatbot will be evaluated through Command Prompt Line, not through Slack or any other channel. Also, ensure that you are mentioning all the updated versions used for your Chatbot project in a Read Me Text File as part of the Final Submission Folder.nt Search
-## 
-
-# Rasa TimeOut Isuue
-
-solved by below method
-
-https://stackoverflow.com/questions/58322102/rasa-timeout-issue
-
-
-1. Go to the directory: venv/Lib/site-packages/rasa/core/channels/console.py
-2. Change the default value of DEFAULT_STREAM_READING_TIMEOUT_IN_SECONDS to more than 10, for example 30 it worked.rasa train core # train core model
-
-
-
-
 # Library Installation :
 
 ### Create New Environment Variable :
