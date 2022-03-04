@@ -86,5 +86,4 @@ ngrok http 5005 #windows
  
 ##### Expose URL : http://a1becb115fae.ngrok.io  # check url in googel browser(copy and paste in  google chrome) : Hello from Rasa: 1.10.3
  
-# Deployment :
-### Slack :
+
